@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin="" defer></script>
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" alt="back">Back</a>
+        </nav>
+        <h1>StoryLine</h1>
+    </header>
+    <main class="container">
+        <div id="aside">
+            <div id="Signup">
+                <!-- <button>Sign up</button> -->
+                <h3>Sign Up</h3>
+                <form id="new-user-form">
+                    <input type="text" name="first_name" placeholder="First name">
+                    <input type="text" name="last_name" placeholder="Last name">
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+            <div id="Login">
+                <!-- <button>Login</button> -->
+                <h3>Login</h3>
+                <form id="login-form">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+        <div id="mapid"></div>
+    </main>
+    <footer> 
+    </footer>
+    
+    
+</body>
+</html>
